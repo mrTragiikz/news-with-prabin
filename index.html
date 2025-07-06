@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News With Prabin</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="logo">📰 News With Prabin</div>
+      <div class="date-weather">22 Asar 2082 | July 06, 2025 | Kathmandu: 66°F</div>
+    
+      <div class="top-info">
+        <div class="live-clock-header">
+          <span class="clock-icon">🕒</span>
+          <span id="top-clock">--:--:--</span>
+        </div>
+        <div class="contact-header">
+          📧 <a href="mailto:sharmaprabin160@gmail.com">sharmaprabin160@gmail.com</a> |
+          📞 <a href="tel:+9779761734526">9761734526</a> |
+          📍 Bharatpur-12, Chitwan
+        </div>
+      </div>
+    </div>
+    <nav>
+    
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">National</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">Photos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="breaking">
+    <strong>🔴 Breaking News:</strong>
+    <marquee behavior="scroll" direction="left">
+      4.0 GPA Toppers Announced | Heavy Rain Alert in Terai Region
+    </marquee>
+  </section>
+
+  <main class="container">
+    <section class="featured">
+      <h2>Top Stories</h2>
+      <article>
+        <a href="#">
+          <img src="https://via.placeholder.com/600x300" alt="Top Story"/>
+          <h3>Flood in Texas: 67 Confirmed Dead, 27 Missing</h3>
+          <p>Floods in Texas continue to wreak havoc as rescue teams search for missing individuals...</p>
+        </a>
+      </article>
+    </section>
+
+    <section class="latest-news">
+      <h2>Latest News</h2>
+      <div class="grid">
+        <article>
+          <a href="#">
+            <img src="https://via.placeholder.com/300x180" alt="Education News">
+            <h4>Government announces new education reforms</h4>
+            <p>The Ministry of Education has announced sweeping changes to the national curriculum...</p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="https://via.placeholder.com/300x180" alt="Football Team News">
+            <h4>National football team leaves for Bangladesh</h4>
+            <p>Preparations for the South Asian Games are underway as the Nepali team departs...</p>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="https://via.placeholder.com/300x180" alt="Stock Market News">
+            <h4>Stock market surges after economic policy update</h4>
+            <p>Investors express optimism as NEPSE index rises by 45 points on Monday...</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="external-news">
+      <h2>Prabin News</h2>
+      <iframe src="https://www.hamropatro.com/news" width="100%" height="600" frameborder="0" style="border:1px solid #ccc; border-radius: 8px;" title="Prabin News"></iframe>
+    </section>
+
+    <section class="live-clock">
+      <h2>🕒 Live Clock</h2>
+      <div id="clock"></div>
+    </section>
+
+    <section class="contact-us">
+      <h2>📩 Contact Us</h2>
+      <p>Email: <a href="mailto:sharmaprabin160@gmail.com">sharmaprabin160@gmail.com</a></p>
+      <p>Phone: <a href="tel:+9779761734526">9761734526</a></p>
+      <p>Location: Bharatpur - 12, Chitwan</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">About Us</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Use</a>
+    </div>
+    <p>&copy; 2025 News With Prabin. Designed with ❤️ in Chitwan</p>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const clock = document.getElementById('clock');
+      clock.textContent = now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  
+      const topClock = document.getElementById('top-clock');
+      function updateTopClock() {
+        const now = new Date();
+        topClock.textContent = now.toLocaleTimeString();
+      }
+      setInterval(updateTopClock, 1000);
+      updateTopClock();
+    </script>
+    
+
+</body>
+</html>
